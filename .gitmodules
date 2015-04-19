@@ -1,0 +1,3 @@
+[submodule "chef-repo/site-cookbooks/myapp"]
+	path = chef-repo/site-cookbooks/myapp
+	url = https://github.com/ifourmanov/cookbooks-myapp

@@ -1,1 +1,4 @@
 .vagrant
+chef-repo/bin
+chef-repo/tmp
+chef-repo/cookbooks

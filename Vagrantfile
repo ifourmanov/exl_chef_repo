@@ -48,7 +48,7 @@ Vagrant.configure(2) do |config|
   #   vb.gui = true
   #
      # Customize the amount of memory on the VM:
-     vb.memory = "1024"
+     vb.memory = "2048"
    end
   #
   # View the documentation for the provider you are using for more
@@ -67,6 +67,7 @@ Vagrant.configure(2) do |config|
    config.vm.provision "shell", inline: <<-SHELL
        sudo yum install -y git zlib zlib-devel openssl openssl-devel epel-release
        sudo yum groupinstall -y "Development Tools" 
+       sudo yum update -y device-mapper-libs
        sudo yum install -y docker-io
        sudo service docker start
    SHELL
